@@ -30,3 +30,7 @@ html[lang=en] .hero-intro .personal-copy{line-height:1.75}
 .page-head h1,.section-head h2,.split>h2,.skill-row h3,.service h3,.learn-card h2,.detail-grid h2,.contact-item strong{color:var(--accent)}
 .filters .filter.active{background:var(--accent);border-color:var(--accent);color:var(--paper)}
 .hero-intro .personal-name{color:var(--accent)}
+
+[data-brand=whatsapp]{--brand:#1da851}[data-brand=linkedin]{--brand:#0a66c2}[data-brand=github]{--brand:#181717}[data-brand=nafezly]{--brand:#1a86d8}[data-brand=tiktok]{--brand:#fe2c55}
+html[data-theme=dark] [data-brand=whatsapp]{--brand:#25d366}html[data-theme=dark] [data-brand=linkedin]{--brand:#4f9fe6}html[data-theme=dark] [data-brand=github]{--brand:#f0f6fc}html[data-theme=dark] [data-brand=nafezly]{--brand:#2196f3}html[data-theme=dark] [data-brand=tiktok]{--brand:#ff4d70}
+.contact-item[data-brand] strong,.footer-links a[data-brand]{color:var(--brand)}.footer-links{flex-wrap:wrap}.footer-links a[data-brand]{font-weight:600}
