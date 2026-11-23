@@ -17,10 +17,16 @@
 
 .slide-gallery{display:grid;gap:24px;margin-top:25px}.slide-gallery img{width:100%;height:auto}
 
-.intro{padding:64px 0 8px;display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:44px}
-.intro h1{font-size:clamp(32px,4vw,56px);line-height:1.45;letter-spacing:-1.5px;margin:0;font-weight:800}
-.intro-body p{font-size:15px;color:var(--second);margin:0 0 22px;max-width:60ch}
-.facts{margin:0;display:grid;gap:8px}.facts div{display:grid;grid-template-columns:90px 1fr;gap:12px;align-items:baseline}
-.facts dt{font-size:12px;color:var(--accent);font-weight:600}.facts dd{margin:0;font-size:13px}
-.intro+.hero{padding-top:44px}
-@media(max-width:760px){.intro{grid-template-columns:1fr;gap:16px;padding:38px 0 30px}.intro h1{font-size:34px}.intro-body p{font-size:14px}}
+/* The home opens as one composition: idea, person, then work. */
+.hero-top{grid-template-columns:1.35fr 1fr;gap:64px;align-items:center}
+.hero .hero-intro{border-inline-start:1px solid var(--line);padding-inline-start:38px}
+.hero-intro .personal-name{font-size:25px;font-weight:700;color:var(--ink);line-height:1.55;margin:0 0 10px}
+.hero-intro .personal-note{font-size:14px;color:var(--accent);font-weight:600;margin:0 0 16px}
+.hero-intro .personal-copy{font-size:14px;line-height:2;margin:0 0 25px}
+html[lang=en] .hero-intro .personal-copy{line-height:1.75}
+@media(max-width:1050px) and (min-width:761px){.hero-top{gap:30px}.hero .hero-intro{padding-inline-start:24px}.hero h1{font-size:48px}.hero-intro .personal-name{font-size:23px}}
+@media(max-width:760px){.hero-top{grid-template-columns:1fr;gap:27px}.hero .hero-intro{border:0;padding:0}.hero .eyebrow{margin-bottom:15px}.hero-intro .personal-name{font-size:24px;margin-bottom:7px}.hero-intro .personal-note{font-size:13px;margin-bottom:12px}.hero-intro .personal-copy{font-size:14px;line-height:2;margin-bottom:22px}.hero-work{margin-top:30px}.hero h1{font-size:clamp(34px,10vw,48px)}}
+/* Muted plum carries the same identity across the portfolio. */
+.page-head h1,.section-head h2,.split>h2,.skill-row h3,.service h3,.learn-card h2,.detail-grid h2,.contact-item strong{color:var(--accent)}
+.filters .filter.active{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.hero-intro .personal-name{color:var(--accent)}
