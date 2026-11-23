@@ -12,15 +12,17 @@ jobs:
         run: |
           curl --fail --location --output /tmp/part1.zip https://github.com/ZeinabAbouTwyla/zaynab-portfolio/releases/download/portfolio-rebuild-assets/portfolio-part-1.zip
           curl --fail --location --output /tmp/part2.zip https://github.com/ZeinabAbouTwyla/zaynab-portfolio/releases/download/portfolio-rebuild-assets/portfolio-part-2.zip
-          curl --fail --location --output /tmp/part3.zip https://github.com/ZeinabAbouTwyla/zaynab-portfolio/releases/download/portfolio-rebuild-assets/portfolio-part-3.zip
+          curl --fail --location --output /tmp/part3.zip https://github.com/ZeinabAbouTwyla/zaynab-portfolio/releases/download/portfolio-rebuild-assets/rebuild-assets-3.zip
+          curl --fail --location --output /tmp/part4.zip https://github.com/ZeinabAbouTwyla/zaynab-portfolio/releases/download/portfolio-rebuild-assets/rebuild-assets-4.zip
           echo '30802438fde6a91f1af11d389146fac76c355435806310f49f11634204d11d80  /tmp/part1.zip' | sha256sum --check
           echo '67176d8b3fc7cdf0efdc80690eecff9297a314e968eba8efbb94eafdff64796f  /tmp/part2.zip' | sha256sum --check
-          echo '4815ff3ea35f261944579ed43681f5601ce3cf1c47cdf0d017beee6b2270d785  /tmp/part3.zip' | sha256sum --check
+          echo '76f910926212fbcdc9a1dac4c4aaf81a385f989548074efe18660ee8a276521d  /tmp/part3.zip' | sha256sum --check
+          echo '316138e4dcbc18d94a066346589d61355b0a2c8255d08171a4d7730951117549  /tmp/part4.zip' | sha256sum --check
       - name: Import only static portfolio files
         shell: python
         run: |
           import zipfile, pathlib
-          for n in range(1,4):
+          for n in range(1,5):
               with zipfile.ZipFile(f'/tmp/part{n}.zip') as z:
                   for f in z.infolist():
                       p=pathlib.PurePosixPath(f.filename)
