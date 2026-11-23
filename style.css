@@ -34,3 +34,67 @@ html[lang=en] .hero-intro .personal-copy{line-height:1.75}
 [data-brand=whatsapp]{--brand:#1da851}[data-brand=linkedin]{--brand:#0a66c2}[data-brand=github]{--brand:#181717}[data-brand=nafezly]{--brand:#1a86d8}[data-brand=tiktok]{--brand:#fe2c55}
 html[data-theme=dark] [data-brand=whatsapp]{--brand:#25d366}html[data-theme=dark] [data-brand=linkedin]{--brand:#4f9fe6}html[data-theme=dark] [data-brand=github]{--brand:#f0f6fc}html[data-theme=dark] [data-brand=nafezly]{--brand:#2196f3}html[data-theme=dark] [data-brand=tiktok]{--brand:#ff4d70}
 .contact-item[data-brand] strong,.footer-links a[data-brand]{color:var(--brand)}.footer-links{flex-wrap:wrap}.footer-links a[data-brand]{font-weight:600}
+
+/* A designed closing section. Preview revision, not yet deployed. */
+.footer{margin-top:72px;padding:0;border-top:0;background:var(--soft);position:relative}
+.footer>.wrap{display:block;padding-top:48px}
+.footer-opening{display:flex;align-items:center;justify-content:space-between;gap:32px;padding-bottom:40px;border-bottom:1px solid var(--accent)}
+.footer .footer-kicker{margin:0 0 14px;font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--accent)}
+.footer .footer-title{margin:0;font-size:clamp(32px,4.2vw,60px);font-weight:700;letter-spacing:-1.5px;line-height:1.5;color:var(--ink)}
+.footer-title span{color:var(--accent)}
+.footer-cta{display:flex;gap:22px;align-items:center;font-size:14px;font-weight:600;white-space:nowrap}
+.footer-arrow{width:76px;height:76px;display:grid;place-items:center;background:var(--accent);color:var(--paper);border-radius:50%;font-size:32px;font-family:var(--en);transition:transform .2s}
+.footer-cta:hover .footer-arrow{transform:rotate(-12deg)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:70px;padding:40px 0 34px}
+.footer-identity .footer-mark{display:inline-flex;align-items:center;gap:12px;font-family:var(--en);font-size:24px;font-weight:700;letter-spacing:-.8px;line-height:1.2}
+.footer-monogram{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--accent);color:var(--accent);font-size:28px;flex-shrink:0}
+.footer-identity .footer-arname{font-size:16px;color:var(--ink);margin:18px 0 7px;font-weight:600}
+.footer-identity .footer-description{font-size:12px;color:var(--second);margin:0;line-height:1.9}
+.footer-identity .footer-location{font-size:11px;color:var(--second);margin-top:18px}
+.footer-column h3{font-size:12px;font-weight:600;color:var(--second);margin:0 0 16px}
+.footer-nav,.footer-links{display:flex;flex-direction:column;align-items:stretch;gap:0;font-size:13px}
+.footer-nav a,.footer-links a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:39px;border-bottom:1px solid var(--line);padding:7px 0}
+.footer-nav a:last-child,.footer-links a:last-child{border:0}
+.footer-links a{font-family:var(--en);font-size:14px;direction:ltr}
+.footer-nav a span:last-child,.footer-links a span:last-child{font-family:var(--en);font-size:14px;color:var(--second)}
+.footer-nav a:hover,.footer-bottom a:hover{text-decoration:underline;text-underline-offset:5px}
+.footer-bottom{border-top:1px solid var(--line);padding:18px 0 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.footer .footer-bottom p{font-size:10px;margin:0;color:var(--second)}
+.footer-bottom a{font-size:11px;font-weight:600}
+html[lang=en] .footer-title{line-height:1.15;letter-spacing:-2px}
+html[data-theme=dark] .footer-arrow{color:#241f27}
+@media(max-width:1000px){.footer-grid{gap:32px;grid-template-columns:1.2fr 1fr 1fr}.footer-identity .footer-mark{font-size:19px}.footer-cta{gap:14px}.footer-arrow{width:60px;height:60px}}
+@media(max-width:600px){.footer{margin-top:44px}.footer>.wrap{padding-top:30px}.footer-opening{align-items:start;gap:18px;padding-bottom:28px}.footer .footer-kicker{font-size:10px;margin-bottom:12px}.footer .footer-title{font-size:30px;letter-spacing:-.8px;line-height:1.6}.footer-cta{flex-direction:column-reverse;gap:9px;align-items:center;font-size:10px;padding-top:35px}.footer-arrow{width:51px;height:51px;font-size:25px}.footer-grid{grid-template-columns:1fr 1fr;column-gap:30px;row-gap:28px;padding:28px 0 25px}.footer-identity{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:15px}.footer-identity .footer-mark{font-size:20px;grid-column:1/-1}.footer-monogram{width:40px;height:40px;font-size:24px}.footer-identity .footer-arname{font-size:14px;margin:16px 0 5px;grid-column:1}.footer-identity .footer-description{font-size:11px;grid-column:1}.footer-identity .footer-location{font-size:10px;grid-row:2/4;grid-column:2;margin:14px 0 0}.footer-column h3{font-size:11px;margin-bottom:10px}.footer-nav{font-size:11px}.footer-links a{font-size:13px}.footer-nav a,.footer-links a{min-height:40px}.footer-bottom{padding:17px 0 21px}.footer .footer-bottom p{font-size:9px;max-width:24ch}.footer-bottom a{font-size:10px}html[lang=en] .footer-title{font-size:34px;line-height:1.2;letter-spacing:-1.4px}html[lang=en] .footer-cta{padding-top:24px}html[lang=en] .footer-identity .footer-description{font-size:10px}html[lang=en] .footer-identity .footer-location{font-size:9px}}
+@media(max-width:350px){.footer .footer-title{font-size:26px}.footer-opening{gap:12px}.footer-cta{font-size:9px}.footer-arrow{width:45px;height:45px}.footer-grid{column-gap:20px}.footer-identity .footer-mark{font-size:19px}.footer-identity{column-gap:8px}.footer-identity .footer-location{font-size:9px}}
+
+.footer-monogram{direction:ltr}
+@media(max-width:600px){.footer-nav{font-size:12px}.footer-column h3{font-size:12px}}
+/* Platform marks and restrained pointer, touch and keyboard feedback. */
+.platform-label{display:flex;align-items:center;gap:11px;min-width:0}
+.platform-icon{display:grid;place-items:center;width:23px;height:23px;flex:none;color:var(--brand)}
+.platform-icon svg{display:block;width:19px;height:19px;fill:currentColor}
+.platform-nafezly svg{width:25px;height:20px}
+a,button{touch-action:manipulation}
+.navlinks a,.brand,.icon-btn,.btn,.textlink,.work-card,.filter,.contact-item,.skill-proof a,.footer-nav a,.footer-links a,.footer-bottom a,.footer-mark{transition:color .18s,background-color .18s,border-color .18s,transform .18s,box-shadow .18s}
+@media(hover:hover) and (pointer:fine){
+.navlinks a:hover,.textlink:hover,.skill-proof a:hover{color:var(--accent);border-color:var(--accent)}
+.icon-btn:hover{background:var(--soft);border-color:var(--accent);transform:translateY(-2px)}
+.work-card:hover{transform:translateY(-3px)}
+.contact-item:hover{border-color:var(--accent);transform:translateY(-3px)}
+.filter:not(.active):hover{background:var(--soft);border-color:var(--accent);color:var(--ink)}
+.footer-nav a:hover,.footer-links a:hover{background:var(--card);padding-inline:8px;text-decoration:none}
+.footer-links a:hover{box-shadow:inset 3px 0 0 var(--brand)}
+.footer-mark:hover{color:var(--accent)}
+}
+.footer-links a:active{background:var(--brand);color:var(--paper);transform:scale(.98)}
+.footer-links a:active .platform-icon,.footer-links a:active span:last-child{color:inherit}
+.footer-nav a:active,.footer-bottom a:active,.textlink:active,.skill-proof a:active{color:var(--accent);background:var(--card)}
+.btn:active,.filter:active,.icon-btn:active{background:var(--accent);color:var(--paper);border-color:var(--accent);transform:scale(.96)}
+.contact-item:active,.work-card:active{transform:scale(.985);background:var(--soft)}
+.footer-cta:active .footer-arrow{background:var(--ink);color:var(--paper);transform:scale(.92)}
+.footer-nav a:focus-visible,.footer-links a:focus-visible{background:var(--card);outline:2px solid var(--accent);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important;animation:none!important}.work-card:hover,.contact-item:hover,.icon-btn:hover,.footer-cta:hover .footer-arrow{transform:none}}
+.footer-links a .platform-label .platform-icon{color:var(--brand)}
+.footer-links a:active .platform-label .platform-icon{color:inherit}
+.footer-links a:active{color:var(--ink);background:var(--card);box-shadow:inset 4px 0 0 var(--brand)}
+.footer-links a:active .platform-label{color:var(--brand)}
