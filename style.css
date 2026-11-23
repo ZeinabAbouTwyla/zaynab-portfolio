@@ -16,3 +16,11 @@
 .hero-work img{object-fit:contain}.work-card p{font-size:14px}.work-card .meta{font-size:11px}.graphic-grid .work-card p{font-size:12px}.hero-intro p{font-size:15px}.skill-row p{font-size:14px}.service p{font-size:14px}@media(max-width:760px){.hero-intro p,.page-head .lead,.bodycopy{font-size:14px}.work-card p,.graphic-grid .work-card p{font-size:13px}.skill-row p,.service p{font-size:13px}.hero-work img{object-fit:contain}.detail-grid ul{font-size:14px}}
 
 .slide-gallery{display:grid;gap:24px;margin-top:25px}.slide-gallery img{width:100%;height:auto}
+
+.intro{padding:64px 0 8px;display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:44px}
+.intro h1{font-size:clamp(32px,4vw,56px);line-height:1.45;letter-spacing:-1.5px;margin:0;font-weight:800}
+.intro-body p{font-size:15px;color:var(--second);margin:0 0 22px;max-width:60ch}
+.facts{margin:0;display:grid;gap:8px}.facts div{display:grid;grid-template-columns:90px 1fr;gap:12px;align-items:baseline}
+.facts dt{font-size:12px;color:var(--accent);font-weight:600}.facts dd{margin:0;font-size:13px}
+.intro+.hero{padding-top:44px}
+@media(max-width:760px){.intro{grid-template-columns:1fr;gap:16px;padding:38px 0 30px}.intro h1{font-size:34px}.intro-body p{font-size:14px}}
